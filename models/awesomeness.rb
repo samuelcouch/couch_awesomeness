@@ -29,4 +29,10 @@ class Awesomeness
 			return topTen
 		end
 	end
+
+	def printTopTen
+		@people.topTen.each do |person|
+			puts person.name
+		end
+	end
 end
