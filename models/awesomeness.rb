@@ -17,7 +17,7 @@ class Awesomeness
 		@people.each do |person|
 			sum += person.awesomeness
 		end
-		return (sum.to_f/@people.length.to_f)
+		return ((sum.to_f/@people.length.to_f)).round(2)
 	end
 
 	def topTen

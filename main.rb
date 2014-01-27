@@ -1,20 +1,22 @@
 require './models/person'
 require './models/awesomeness'
+require 'faker'
 
-people = [Person.new("joe", Random.rand(100)), 
-              Person.new("bob", Random.rand(100)),
-              Person.new("sam", Random.rand(100)),
-              Person.new("tom", Random.rand(100)),
-              Person.new("fred", Random.rand(100)),
-              Person.new("ross", Random.rand(100)),
-              Person.new("jack", Random.rand(100)),
-              Person.new("frank", Random.rand(100)),
-              Person.new("will", Random.rand(100)),
-              Person.new("tim", Random.rand(100)),
-              Person.new("dog", Random.rand(100)),
-              Person.new("rat", Random.rand(100)),
-              Person.new("job", Random.rand(100)), 
-              Person.new("bo", Random.rand(100))]
+I18n.enforce_available_locales = false
+
+people = [Person.new(Faker::Name.name, Random.rand(100)), 
+              Person.new(Faker::Name.name, Random.rand(100)),
+              Person.new(Faker::Name.name, Random.rand(100)),
+              Person.new(Faker::Name.name, Random.rand(100)),
+              Person.new(Faker::Name.name, Random.rand(100)),
+              Person.new(Faker::Name.name, Random.rand(100)),
+              Person.new(Faker::Name.name, Random.rand(100)),
+              Person.new(Faker::Name.name, Random.rand(100)),
+              Person.new(Faker::Name.name, Random.rand(100)),
+              Person.new(Faker::Name.name, Random.rand(100)),
+              Person.new(Faker::Name.name, Random.rand(100)),
+              Person.new(Faker::Name.name, Random.rand(100)),
+              Person.new(Faker::Name.name, Random.rand(100))]
 
 awesomeness_demo = Awesomeness.new(people)
 
