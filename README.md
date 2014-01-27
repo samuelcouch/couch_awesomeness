@@ -20,6 +20,10 @@ To run Awesomeness tests:
     bundle install
     rspec
 
+To run Awesomeness demo:
+
+    ruby main.rb
+
 To run Zebra-striping example:
 
     open index.html in your browser

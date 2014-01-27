@@ -16,11 +16,11 @@ people = [Person.new("joe", 1),
               Person.new("job", 13), 
               Person.new("bo", 14)]
 
-awesomeness_test = Awesomeness.new(people)
+awesomeness_demo = Awesomeness.new(people)
 
-puts "The most awesome person is " + awesomeness_test.mostAwesome
-puts "The average awesomeness is " + awesomeness_test.avgAwesomeness.to_s
+puts "The most awesome person is " + awesomeness_demo.mostAwesome
+puts "The average awesomeness is " + awesomeness_demo.avgAwesomeness.to_s
 puts "The top ten awesome people are: "
-awesomeness_test.topTen.each do |person|
+awesomeness_demo.topTen.each do |person|
   puts person.name + ", " + person.awesomeness.to_s + " awesomenesses"
 end
