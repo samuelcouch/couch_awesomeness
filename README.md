@@ -14,6 +14,8 @@
   * **index.html** is the index page which contains the zebra-striping example.
     * This example is dependant on the Twitter Bootstrap framework which is included.
 
+### main.rb
+  * Contains a demo of the Person and Awesomeness classes.
 
 To run Awesomeness tests:
 
